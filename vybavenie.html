@@ -2,33 +2,47 @@
 <html lang="sk">
 <head>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Vybavenie</title>
 <link rel="stylesheet" href="css/styly.css">
 </head>
 
 <body>
 
+<a href="#main" class="skip-link">Preskočiť na obsah</a>
+
 <header>
 <h1>Vybavenie</h1>
 </header>
 
-<nav>
+<nav aria-label="Hlavná navigácia">
 <ul>
 <li><a href="index.html">Domov</a></li>
 <li><a href="hra.html">O hre</a></li>
 <li><a href="postavy.html">Postavy</a></li>
 <li><a href="vybavenie.html">Vybavenie</a></li>
 <li><a href="kontakt.html">Kontakt</a></li>
+<li><a href="pristupnost.html">Prístupnosť</a></li>
 </ul>
 </nav>
 
-<main>
+<main id="main">
 <h2>Vybavenie</h2>
 
 <table>
-<tr><th>Predmet</th><th>Typ</th></tr>
-<tr><td>Meč</td><td>Zbraň</td></tr>
-<tr><td>Štít</td><td>Ochrana</td></tr>
+<caption>Prehľad vybavenia</caption>
+<tr>
+<th scope="col">Predmet</th>
+<th scope="col">Typ</th>
+</tr>
+<tr>
+<td>Meč</td>
+<td>Zbraň</td>
+</tr>
+<tr>
+<td>Štít</td>
+<td>Ochrana</td>
+</tr>
 </table>
 
 </main>
