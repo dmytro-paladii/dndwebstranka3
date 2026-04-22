@@ -4,19 +4,41 @@ body {
     margin: 0;
 }
 
+/* Skip link */
+.skip-link {
+    position: absolute;
+    left: -999px;
+}
+
+.skip-link:focus {
+    left: 10px;
+    top: 10px;
+    background: black;
+    color: white;
+    padding: 10px;
+}
+
+/* Focus */
+a:focus {
+    outline: 3px solid yellow;
+}
+
+/* Headings */
 h1, h2, h3 {
     font-family: "Times New Roman", serif;
 }
 
+/* Header */
 header {
-    background: #806009;
+    background: #5a4200;
     color: white;
     padding: 20px;
     text-align: center;
 }
 
+/* Navigation */
 nav {
-    background: #ad7c11;
+    background: #7a5800;
     padding: 10px;
 }
 
@@ -25,6 +47,7 @@ nav ul {
     display: flex;
     gap: 15px;
     justify-content: center;
+    padding: 0;
 }
 
 nav a {
@@ -32,10 +55,12 @@ nav a {
     text-decoration: none;
 }
 
-nav a:hover {
+nav a:hover,
+nav a:focus {
     color: yellow;
 }
 
+/* Main */
 main {
     padding: 20px;
     background: white;
@@ -43,6 +68,18 @@ main {
     max-width: 1000px;
 }
 
+/* Table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid black;
+    padding: 8px;
+}
+
+/* Footer */
 footer {
     background: #333;
     color: white;
@@ -50,16 +87,10 @@ footer {
     padding: 10px;
 }
 
-/* responsive */
+/* Responsive */
 @media (max-width: 768px) {
     nav ul {
         flex-direction: column;
         align-items: center;
-    }
-}
-
-@media (max-width: 480px) {
-    header {
-        font-size: 18px;
     }
 }
