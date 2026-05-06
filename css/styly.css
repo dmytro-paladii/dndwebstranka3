@@ -1,96 +1,102 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    background-color: #f4f0e8;
     margin: 0;
+    font-size: 18px;
+    line-height: 1.6;
 }
 
-/* Skip link */
-.skip-link {
-    position: absolute;
-    left: -999px;
-}
-
-.skip-link:focus {
-    left: 10px;
-    top: 10px;
-    background: black;
-    color: white;
-    padding: 10px;
-}
-
-/* Focus */
-a:focus {
-    outline: 3px solid yellow;
-}
-
-/* Headings */
 h1, h2, h3 {
     font-family: "Times New Roman", serif;
 }
 
-/* Header */
 header {
-    background: #5a4200;
+    background: #5c3b09;
     color: white;
-    padding: 20px;
+    padding: 30px;
     text-align: center;
 }
 
-/* Navigation */
 nav {
-    background: #7a5800;
-    padding: 10px;
+    background: #ad7c11;
+    padding: 15px;
 }
 
 nav ul {
     list-style: none;
     display: flex;
-    gap: 15px;
+    gap: 20px;
     justify-content: center;
     padding: 0;
+    margin: 0;
 }
 
 nav a {
     color: white;
     text-decoration: none;
+    font-weight: bold;
+    padding: 10px 15px;
+    border-radius: 8px;
 }
 
-nav a:hover,
-nav a:focus {
+nav a:hover {
+    background-color: #5c3b09;
     color: yellow;
 }
 
-/* Main */
 main {
-    padding: 20px;
+    padding: 30px;
     background: white;
-    margin: 20px auto;
+    margin: 25px auto;
     max-width: 1000px;
+    border-radius: 10px;
 }
 
-/* Table */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+}
+
 table {
     width: 100%;
     border-collapse: collapse;
+    margin-top: 20px;
 }
 
 th, td {
-    border: 1px solid black;
-    padding: 8px;
+    border: 1px solid #806009;
+    padding: 12px;
+    text-align: left;
 }
 
-/* Footer */
+th {
+    background-color: #ad7c11;
+    color: white;
+}
+
 footer {
     background: #333;
     color: white;
     text-align: center;
-    padding: 10px;
+    padding: 20px;
+    margin-top: 30px;
 }
 
-/* Responsive */
+footer a {
+    color: yellow;
+}
+
 @media (max-width: 768px) {
     nav ul {
         flex-direction: column;
         align-items: center;
+    }
+
+    nav a {
+        display: block;
+        width: 200px;
+        text-align: center;
     }
 }
