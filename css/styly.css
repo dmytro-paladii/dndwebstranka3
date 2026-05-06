@@ -100,3 +100,16 @@ footer a {
         text-align: center;
     }
 }
+.skip-link {
+    position: absolute;
+    left: -999px;
+    top: 10px;
+    background: white;
+    color: black;
+    padding: 8px;
+    z-index: 1000;
+}
+
+.skip-link:focus {
+    left: 10px;
+}
